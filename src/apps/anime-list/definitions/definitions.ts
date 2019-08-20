@@ -1,0 +1,3 @@
+type top_anime_subtype = 'bypopularity' | 'airing' | 'upcoming' | 'tv' | 'movie' | 'ova' | 'special' | 'favorite';
+type genre = 'action' | 'adventure' | 'cars' | 'comedy' | 'dementia' | 'demons' | 'drama' | 'ecchi' | 'fantasy' | 'game' | 'harem' | 'hentai' | 'historical' | 'horror' | 'josei' | 'kids' | 'magic' | 'martial arts' | 'mecha' | 'military' | 'music' | 'mystery' | 'parody' | 'police' | 'psychological' | 'romance' | 'samurai' | 'school' | 'sci-fi' | 'seinen' | 'shoujo' | 'shoujo ai' | 'shounen' | 'shounen ai' | 'slice of life' | 'space' | 'sports' | 'super power' | 'supernatural' | 'thriller' | 'vampire' | 'yaoi' | 'yuri'
+type day = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
