@@ -11,7 +11,7 @@
     "build": "webpack -p",
     "start": "webpack-dev-server -d --host 0.0.0.0 --port 1992 --display-error-details",
     "dev": "webpack --watch",
-    "scss-anime-list": "sass --watch src/apps/anime-list/main.scss main.css"
+    "scss-anime-list": "sass --watch src/apps/anime-list/main.scss build/main.css"
   },
   "dependencies": {
     "@types/d3": "^5.7.2",
