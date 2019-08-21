@@ -1,7 +1,7 @@
 export function tryExecute(fn: () => any) {
     let result: any;
     try {
-        fn()
+        result = fn()
     } catch (e) {
         console.error(e);
     }

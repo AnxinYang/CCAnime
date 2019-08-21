@@ -21,24 +21,25 @@ export function animeList(parent: any, title: string, bind: string, load?: (...a
         .parent()
         .parent()
         .append('div')
-        .classed('anime-list', true)
-        .classed('anime-list-loading', true);
+        .classed('anime-list', true);
 
     list.bind(bind, shuffleIn.bind(list));
 
-    list.bind('wheel', function () {
+    cc.routine(title + 'loading', function () {
         let a = list.parent().select('.section-title').node()
         if (a) {
             let { top, bottom } = a.getBoundingClientRect();
 
             if (isLoaded === false && load && top > 0 && bottom < window.innerHeight) {
+                list.classed('anime-list-loading', true)
                 isLoaded = true
                 load(...params).then(function () {
                     list.classed('anime-list-loading', false);
                 });
+                return false;
             }
         }
-    })
+    }, 50)
 
 }
 
