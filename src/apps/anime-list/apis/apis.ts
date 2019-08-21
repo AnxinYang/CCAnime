@@ -139,7 +139,7 @@ class Apis {
     }
 
     getVideos(title: string) {
-        return this.getByUrl(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=anime%20${title.replace(' ', '%20')}%20official%20trailer&type=video&key=${Y_KEY}&maxResults=1`, true)
+        return this.getByUrl(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=anime%20${title.replace(' ', '%20')}%20official%20trailer&type=video&key=${Y_KEY}&maxResults=1&order=relevance`, true)
             .then(function (res: { items: any[] }) {
                 return res.items[0]
             });
