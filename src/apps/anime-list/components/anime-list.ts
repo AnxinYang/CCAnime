@@ -1,5 +1,5 @@
-import cc from '../../../cc';
-import { ccd3 } from '../../../cc';
+import cc, { ccd3 } from 'ccts';
+
 import apis from '../apis/apis';
 
 export function animeList(parent: any, title: string, bind: string, load?: (...args: any[]) => any, params: string[] = []) {

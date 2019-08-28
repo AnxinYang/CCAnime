@@ -1,4 +1,4 @@
-import cc, { ccd3 } from '../../../cc';
+import cc, { ccd3 } from 'ccts';
 import apis from '../apis/apis';
 import '../definitions/definitions';
 import { animeList } from './anime-list';

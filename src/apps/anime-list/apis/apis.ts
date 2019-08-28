@@ -1,4 +1,4 @@
-import cc, { ccd3 } from '../../../cc';
+import cc, { ccd3 } from 'ccts';
 import '../definitions/definitions';
 
 const HOST = `https://api.jikan.moe/v3/`;

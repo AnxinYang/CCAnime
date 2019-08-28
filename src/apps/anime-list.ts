@@ -1,4 +1,4 @@
-import cc from '../cc';
+import cc, { ccd3 } from 'ccts';
 import app from './anime-list/components/app';
 import YoutubePlayer from './anime-list/components/youtube-player';
 
